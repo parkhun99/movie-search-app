@@ -33,9 +33,9 @@ export default class MovieList extends Component {
 
     const loaderEl = this.el.querySelector('.the-loader')
     if (movieStore.state.loading === true) {
-      loaderEl.classList.remove('hide')
+      loaderEl?.classList.remove('hide')
     } else {
-      loaderEl.classList.add('hide')
+      loaderEl?.classList.add('hide')
     }
   }
 }
